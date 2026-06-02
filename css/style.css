@@ -250,6 +250,13 @@ th {
 .waitlist-form input:focus {
   outline: 2px solid rgba(201,168,76,0.35);
 }
+.waitlist-form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
 .form-message {
   margin-top: 1rem;
   min-height: 1.5rem;
