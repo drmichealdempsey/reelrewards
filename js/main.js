@@ -15,12 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
           body: JSON.stringify({
             name: form.name.value,
             email: form.email.value,
-            phone: form.phone.value
+            phone: form.phone.value,
+            address: form.address.value
           })
         });
         const result = await response.json();
         if (response.ok) {
-          message.textContent = 'Thanks! We will be in touch soon.';
+          message.textContent = 'Application received! We\'ll review and get back to you within 24 hours.';
           form.reset();
         } else {
           message.textContent = 'Error: ' + (result.error || 'Please try again.');
